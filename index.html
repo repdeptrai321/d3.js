@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[221124029120][Lê Hoài An Khang][48K29.1]</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+    <h1>[221124029120][Lê Hoài An Khang][48K29.1]</h1>
+
+    <div class="tabs">
+        <button class="tab-button" onclick="showChart(1)">Q1</button>
+        <button class="tab-button" onclick="showChart(2)">Q2</button>
+        <button class="tab-button" onclick="showChart(3)">Q3</button>
+        <button class="tab-button" onclick="showChart(4)">Q4</button>
+        <button class="tab-button" onclick="showChart(5)">Q5</button>
+        <button class="tab-button" onclick="showChart(6)">Q6</button>
+        <button class="tab-button" onclick="showChart(7)">Q7</button>
+        <button class="tab-button" onclick="showChart(8)">Q8</button>
+        <button class="tab-button" onclick="showChart(9)">Q9</button>
+        <button class="tab-button" onclick="showChart(10)">Q10</button>
+        <button class="tab-button" onclick="showChart(11)">Q11</button>
+        <button class="tab-button" onclick="showChart(12)">Q12</button>
+    </div>
+
+    <div class="chart-container">
+        <div id="chart1" class="chart"></div>
+        <div id="chart2" class="chart"></div>
+        <div id="chart3" class="chart"></div>
+        <div id="chart4" class="chart"></div>
+        <div id="chart5" class="chart"></div>
+        <div id="chart6" class="chart"></div>
+        <div id="chart7" class="chart"></div>
+        <div id="chart8" class="chart"></div>
+        <div id="chart9" class="chart"></div>
+        <div id="chart10" class="chart"></div>
+        <div id="chart11" class="chart"></div>
+        <div id="chart12" class="chart"></div>
+    </div>
+
+    
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+    <script src="chart3.js"></script>
+    <script src="chart4.js"></script>
+    <script src="chart5.js"></script>
+    <script src="chart6.js"></script>
+    <script src="chart7.js"></script>
+    <script src="chart8.js"></script>
+    <script src="chart9.js"></script>
+    <script src="chart10.js"></script>
+    <script src="chart11.js"></script>
+    <script src="chart12.js"></script>
+
+    <script>
+        function showChart(chartNumber) {
+            document.querySelectorAll(".chart").forEach(chart => {
+                chart.style.display = "none";
+            });
+
+            document.getElementById(`chart${chartNumber}`).style.display = "block";
+        }
+
+        showChart(1);
+    </script>
+
+</body>
+</html>
